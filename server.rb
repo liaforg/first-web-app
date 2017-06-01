@@ -15,3 +15,10 @@ get '/about_me' do
 
   erb :about
 end
+
+get '/favourites' do
+
+  @fav_links = ['http://www.blogto.com/', 'http://www.pinterest.com/', 'http://www.buzzfeed.com/']
+
+  erb :favourites
+end
